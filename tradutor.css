@@ -1,0 +1,23 @@
+/***************************************************
+Esconder barra de tradução padrão do google
+***************************************************/
+#google_translate_element,
+.goog-te-banner-frame,
+.goog-te-balloon-frame,
+#goog-gt-tt,
+.goog-te-balloon-frame,
+.goog-tooltip,
+.goog-tooltip:hover {
+  display:none !important;
+}
+
+/* Retirar o "top: 40px" que o Google adiciona ao body quando clicamos na tradução */
+.goog-te-banner-frame.skiptranslate {display: none !important;}
+body { top: 0px !important; }
+
+/* Posicionamento das bandeiras de tradução */
+  .main li{
+  display: inline;
+  float: right;
+  margin-left: 10px;
+}
